@@ -1,0 +1,56 @@
+@use 'sass:math';
+
+$grid-columns: 12;
+$gutter-width: 8px;
+$container-max-width: 1920px;
+
+
+.container { 
+  height: 100%;
+  max-width: $container-max-width;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-full-width {
+  max-width: 100%
+}
+
+.row { 
+  display: flex;
+  flex-wrap: nowrap;
+  margin-right: -$gutter-width;
+  margin-left: -$gutter-width;
+}
+
+.col { 
+  min-height: 1px;
+  padding-right: $gutter-width;
+  padding-left: $gutter-width;
+  flex: 1;
+}
+
+.no-gutters { 
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@for $i from 1 through $grid-columns{
+  .col-#{$i} {
+    @extend .col;
+
+    width: math.div($i, $grid-columns) * 100%;
+    flex: none;
+  }
+
+  .col-offset-#{$i} {
+    margin-left: math.div($i, $grid-columns) * 100%;
+  }
+}
