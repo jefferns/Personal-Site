@@ -1,44 +1,32 @@
-import type { CSSProperties } from "react";
+import type { CSSProperties, ReactNode } from "react";
 import "./IconButton.scss";
 import { Link } from "react-router-dom";
 
 type IconButtonProps = {
-  asset: string; // asset source
+  // asset: string; // asset source
   alt: string; // alt Text
   to: string; // destination URL
   external: boolean; // use Link vs Anchor
   height: number;  // height in pixels
   style?: CSSProperties;
+  children: ReactNode
 }
 
 const IconButton = (props: IconButtonProps) => {
-  const { alt, asset, style, height, to, external } = props;
+  const { style, to, external, children } = props;
 
-  const Icon = (
-    <div>
-      <img
-        src={asset}
-        alt={alt}
-        height={height}
-        style={style}
-      />
-    </div>
-  );
-
-  // const Icon = (
-  //   <svg>
-      
-  //   </svg>
-  // );
   return (
-    <div className="icon-btn d-flex">
+    <div
+      className="icon-btn d-flex"
+      style={style}
+    >
       {
         external
         ? (<a href={to}>
-            {Icon}
+            {children}
           </a>)
         : (<Link to={to}>
-          {Icon}
+          {children}
         </Link>)
       }
     </div>
