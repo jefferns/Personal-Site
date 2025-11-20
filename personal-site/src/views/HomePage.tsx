@@ -1,5 +1,7 @@
 import AppBar from "../components/AppBar/AppBar";
+import Footer from "../components/Footer/Footer";
 import ViewBody from "../components/ViewBody/ViewBody";
+import './HomePage.scss'
 
 const HomePage = () => {
   return ( 
@@ -30,6 +32,7 @@ const HomePage = () => {
           <li>Mail server</li>
         </ul>
       </ViewBody>
+      <Footer/>
     </div>
    );
 }

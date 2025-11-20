@@ -7,12 +7,14 @@ type ViewBodyProps = {
 
 const ViewBody = ({ children }: ViewBodyProps) => {
   return ( 
-    <div className="view-body container">
-      <div className="row">
-        <div className="col">
-          {children}
+    <div className="view-body">
+      <div className="container">
+        <div className="row">
+          <div className="col">
+            {children}
+          </div>
         </div>
-      </div>
+      </div>  
     </div>
    );
 }
