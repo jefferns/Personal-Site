@@ -26,7 +26,6 @@ const AppBar = () => {
               external={true}
               alt="Linked In"
               height={24}
-              style={{fill: 'white'}}
             >
               <LinkedInSVG/>
             </IconButton>
@@ -35,7 +34,6 @@ const AppBar = () => {
               external={true}
               alt="Instagram"
               height={24}
-              style={{fill: 'white'}}
             >
               <InstagramSVG/>
             </IconButton>
@@ -44,7 +42,6 @@ const AppBar = () => {
               external={true}
               alt="GitHub"
               height={24}
-              style={{fill: 'white'}}
             >
               <GitlabSVG/>
             </IconButton>
