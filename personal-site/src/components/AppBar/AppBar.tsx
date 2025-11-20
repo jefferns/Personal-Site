@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom';
 import './AppBar.scss';
 import IconButton from '../IconButton';
-import GitlabSVG from '../../assets/github.svg?react';
+// @ts-expect-error: plugin adds the ? extension 
+import GitlabSVG from '../../assets/github.svg?react'; 
+// @ts-expect-error: plugin adds the ? extension 
 import LinkedInSVG from '../../assets/linkedin.svg?react';
+// @ts-expect-error: plugin adds the ? extension 
 import InstagramSVG from '../../assets/instagram.svg?react';
 
 const INSTAGRAM_URL = 'https://www.instagram.com/nick.jefferis/';
