@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import './ViewBody.scss';
 
 type ViewBodyProps = {
   children: ReactNode;

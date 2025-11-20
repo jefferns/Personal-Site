@@ -19,17 +19,16 @@ const HomePage = () => {
         </p>
         <p>I implemented a CSS Grid System from scratch as practice.</p>
         <h3>Plans:</h3>
-        <p>
-          <ul>
-            <li>Dark Mode</li>
-            <li>Sub domains for each project</li>
-            <li>Togglable borders for grid system visualization</li>
-            <li>Better styling</li>
-            <li>File Embedding</li>
-            <li>Visit counter like 2k sites</li>
-            <li>Mail server</li>
-          </ul>
-        </p>
+        <ul>
+          <li>Breakpoints and media queries for mobile support</li>
+          <li>Dark Mode</li>
+          <li>Sub domains for each project</li>
+          <li>Togglable borders for grid system visualization</li>
+          <li>Better styling</li>
+          <li>File Embedding</li>
+          <li>Visit counter like 2k sites</li>
+          <li>Mail server</li>
+        </ul>
       </ViewBody>
     </div>
    );
