@@ -4,6 +4,7 @@
   height: 90%;
   width: 90%;
   border-radius: $spacing-unit;
+  min-width: 85px;
 
   > *:first-child {
     display: flex;

@@ -5,10 +5,12 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import HomePage from './views/HomePage.tsx'
 import Discovery from './views/Discovery.tsx'
 import NotFound from './views/NotFound.tsx'
+import ForMegan from './views/ForMegan.tsx'
 
 const router = createBrowserRouter([
   {path: "/", element: <HomePage />},
   {path: "/discovery", element: <Discovery/>},
+  {path: "/megan", element: <ForMegan/>},
   { path: '*', element: <NotFound/>}
 ])
 

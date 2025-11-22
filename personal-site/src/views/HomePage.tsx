@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import AppBar from "../components/AppBar/AppBar";
 import Footer from "../components/Footer/Footer";
 import ViewBody from "../components/ViewBody/ViewBody";
@@ -13,7 +14,11 @@ const HomePage = () => {
         </p>
         <h3>Goal:</h3>
         <p>I wanted to host my own web server and needed something to host. </p>
-        <p>My goal is to turn this into an interactive repository; a home for all my previous (and future) projects.</p>
+        <p>
+          My goal is to turn this into an interactive repository; a home for all my previous (and future) projects.
+          I will possibly create subdomains for each app as practice for networking. In the mean time, likely just 
+          react-router for different pages.
+        </p>
         <h3>Specs: </h3>
         <p>
           This is a Type Script React App built with Vite. I am currently hosting it on a Raspberry Pi 4 B in my living room. I built a script to remotely 
@@ -31,6 +36,8 @@ const HomePage = () => {
           <li>Visit counter like 2k sites</li>
           <li>Mail server</li>
         </ul>
+        <h3>For Megan: </h3>
+        <Link to={'/megan'}>Click this</Link>
       </ViewBody>
       <Footer/>
     </div>
