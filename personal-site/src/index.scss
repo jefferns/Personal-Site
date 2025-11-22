@@ -1,3 +1,5 @@
+@use './styles/index.scss' as *;
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -39,9 +41,7 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
-}
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -71,6 +71,10 @@ button:focus-visible {
   justify-content: center;
 }
 
+.j-c-end {
+  justify-content: end;
+}
+
 .s-between {
   justify-content: space-between;
 }
@@ -91,6 +95,18 @@ button:focus-visible {
   align-self: center;
 }
 
+.m-left {
+  margin-left: auto
+}
+
+.m-right {
+  margin-right: auto
+}
+
 .flex-grow {
   flex-grow: 1;
+}
+
+.gap {
+  gap: $spacing-unit;
 }

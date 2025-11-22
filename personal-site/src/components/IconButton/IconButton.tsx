@@ -17,7 +17,7 @@ const IconButton = (props: IconButtonProps) => {
 
   return (
     <div
-      className="icon-btn d-flex"
+      className="icon-btn d-flex a-i-center j-c-center"
       style={style}
     >
       {

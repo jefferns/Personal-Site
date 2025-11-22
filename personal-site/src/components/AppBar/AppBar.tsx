@@ -1,12 +1,12 @@
-import { Link } from 'react-router-dom';
 import './AppBar.scss';
-import IconButton from '../IconButton';
+import IconButton from '../IconButton/IconButton';
 // @ts-expect-error: plugin adds the ? extension 
 import GitlabSVG from '../../assets/github.svg?react'; 
 // @ts-expect-error: plugin adds the ? extension 
 import LinkedInSVG from '../../assets/linkedin.svg?react';
 // @ts-expect-error: plugin adds the ? extension 
 import InstagramSVG from '../../assets/instagram.svg?react';
+import HomePageLink from './HomePageLink';
 
 const INSTAGRAM_URL = 'https://www.instagram.com/nick.jefferis/';
 const LINKEDIN_URL = 'https://www.linkedin.com/in/nicholas-jefferis-818106194';
@@ -17,10 +17,10 @@ const AppBar = () => {
     <div className='appbar'>
       <div className="container a-c-center">  
         <div className="row s-between">
-          <div className="col-2 ">
-            <Link to={"/"}> jefferis.dev </Link>
+          <div className="col-1 d-flex a-i-center">
+            <HomePageLink/>
           </div>
-          <div className="col-1 d-flex flex-row s-evenly">
+          <div className="col-10 d-flex j-c-end gap">
             <IconButton 
               to={LINKEDIN_URL}
               external={true}

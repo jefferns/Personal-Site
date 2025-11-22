@@ -1,0 +1,16 @@
+@use '../../styles/index.scss' as *;
+
+.icon-btn {
+  border-radius: 5px;
+  height: 36px;
+  width: 36px;
+
+  > *:first-child {
+    height: 24px;
+    width: 24px;
+  }
+}
+.icon-btn:hover { 
+  background-color: $greyGreen;
+  border-radius: 50%;
+}

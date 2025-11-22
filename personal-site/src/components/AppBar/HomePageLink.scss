@@ -1,0 +1,23 @@
+@use '../../styles/index.scss' as *;
+
+.home-page-link {
+  height: 90%;
+  width: 90%;
+  border-radius: $spacing-unit;
+
+  > *:first-child {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+  }
+}
+.home-page-link:hover {
+  background-color: $greyGreen;
+  > *:first-child {
+    color: white;
+  }
+}

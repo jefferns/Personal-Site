@@ -1,11 +1,11 @@
 import AppBar from "../components/AppBar/AppBar";
 import Footer from "../components/Footer/Footer";
 import ViewBody from "../components/ViewBody/ViewBody";
-import './HomePage.scss'
+import './Views.scss'
 
 const HomePage = () => {
   return ( 
-    <div className="home-page container-full-width">
+    <div className="view container-full-width">
       <AppBar/>
       <ViewBody>
         <p>
