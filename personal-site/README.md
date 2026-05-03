@@ -4,6 +4,7 @@ vim /etc/nginx/sites-available/default
  ssh <user>@<local ip>
 
  deploy.sh runs script to build and export code to server
+ - may have to open git BASH terminal
 
  npm run dev
 

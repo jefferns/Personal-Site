@@ -7,9 +7,9 @@ import Discovery from './views/Discovery.tsx'
 import NotFound from './views/NotFound.tsx'
 
 const router = createBrowserRouter([
-  {path: "/", element: <HomePage />},
-  {path: "/discovery", element: <Discovery/>},
-  { path: '*', element: <NotFound/>}
+  { path: "/", element: <HomePage /> },
+  { path: "/discovery", element: <Discovery/> },
+  { path: '*', element: <NotFound/> }
 ])
 
 createRoot(document.getElementById('root')!).render(
