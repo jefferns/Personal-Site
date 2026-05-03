@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import AppBar from "../components/AppBar/AppBar";
 import Footer from "../components/Footer/Footer";
 import ViewBody from "../components/ViewBody/ViewBody";
@@ -36,8 +35,6 @@ const HomePage = () => {
           <li>Visit counter like 2k sites</li>
           <li>Mail server</li>
         </ul>
-        <h3>For Megan: </h3>
-        <Link to={'/megan'}>Click this</Link>
       </ViewBody>
       <Footer/>
     </div>
